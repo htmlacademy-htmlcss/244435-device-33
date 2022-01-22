@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Рукия Багаудин](https://up.htmlacademy.ru/htmlcss/33/user/244435).
-* Наставник: `Неизвестно`.
+* Студент: [Рукия Багаудин](https://up.htmlacademy.ru/htmlcss/33/user/244435)
+* Наставник: [Анна Рус] (https://htmlacademy.ru/profile/id473505)
 
 ---
 
