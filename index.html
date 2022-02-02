@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <nav class="navigation">
+      <a href="#" class="navigation-logo">
+        <img src="" alt="Логотип магазина Девайс" class="main-header-logo" />
+      </a>
+      <form action="https://echo.htmlacademy.ru/" class="main-search">
+        <label for="main-search-field" class="visually-hidden">Поиск по сайту</label>
+        <input type="text" placeholder="Текст поиска" name="main-search-field" id="main-search-field" />
+        <button class="main-search-button" type="submit">Найти</button>
+      </form>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">Войти</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">Сравнить</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">Корзина</a>
+        </li>
+      </ul>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="catalog.html" class="navigation-link">Каталог товаров</a>
+        </li>
+        <li class="navigation-item">
+          <a href="delivery.html" class="navigation-link">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a href="warranty.html" class="navigation-link">Гарантия</a>
+        </li>
+        <li class="navigation-item">
+          <a href="contacts.html" class="navigation-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-index">
+    <h1 class="visually-hidden">Интернет-магазин device</h1>
+    <div class="slider">
+      <img class="slider-image" src="" alt="Белый квадрокоптер" />
+      <button class="slider-button slider-prev">
+        <span class="visually-hidden">Предыдущий баннер</span>
+      </button>
+      <button class="slider-button slider-next">
+        <span class="visually-hidden">Следующий баннер</span>
+      </button>
+      <p>
+        <span class="slider-header">Порхает как бабочка,<br />
+          жалит как пчела!</span>
+      </p>
+      <p>
+        Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+        замаскированным под стандартную камеру.
+      </p>
+      <a href="#" class="slider-link">Подробнее</a>
+      <ol class="slier-pagination">
+        <li class="sider-pagination-item">
+          <button class="slider-pagination-button slider-pagination-button-current" type="button">
+            <span class="visually-hidden">1 баннер</span>
+          </button>
+        </li>
+        <li>
+          <button class="slider-pagination-button" type="button">
+            <span class="visually-hidden">2 баннер</span>
+          </button>
+        </li>
+        <li>
+          <button class="slider-pagination-button" type="button">
+            <span class="visually-hidden">3 баннер</span>
+          </button>
+        </li>
+      </ol>
+      <table class="slider-details">
+        <tr class="slider-details-bold">
+          <td>800 м</td>
+          <td>50 м</td>
+        </tr>
+        <tr class="slider-details-light">
+          <td>Дальность полета</td>
+          <td>Радиус поражения</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+
 </html>
