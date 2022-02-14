@@ -80,7 +80,9 @@ body {
 .categories-link {
     text-decoration: none;
     color: #000000;
+}
 
+.categories-link h3 {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -121,3 +123,72 @@ body {
     background-color: #444444;;
 }
 
+.breadcrumbs-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.catalog-products-label {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.catalog-products {
+    background: #F0F0F0;
+}
+
+.product-card-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.product-card-price {
+    color: #444444;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.button-more {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.pagination-link {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    opacity: 0.3;
+    color: #444444;
+}
+
+.catalog-filter label {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.main-header {
+    background: #FFE17F;
+}
+
+.select-control option {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
