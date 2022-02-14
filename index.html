@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
   <header class="main-header">
     <nav class="navigation">
@@ -30,7 +30,7 @@
           <a href="#" class="navigation-link">Корзина</a>
         </li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-page">
         <li class="navigation-item">
           <a href="catalog.html" class="navigation-link">Каталог товаров</a>
         </li>
@@ -61,14 +61,14 @@
         </div>
         <div class="slider-details-wrapper">
           <p>
-            <b class="slider-header">Порхает как бабочка,<br />
+            <b class="main-title slider-header">Порхает как бабочка,<br />
               жалит как пчела!</b>
           </p>
-          <p>
+          <p class="plain-text">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
             лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="#" class="slider-link">Подробнее</a>
+          <a href="#" class="button slider-link">Подробнее</a>
           <table class="slider-details">
             <tr class="slider-details-bold">
               <td>800 м</td>
@@ -93,14 +93,14 @@
         </div>
         <div class="slider-details-wrapper">
           <p>
-            <b class="slider-header">Худеем<br />
+            <b class="main-title slider-header">Худеем<br />
               правильно!</b>
           </p>
           <p>
             Мотивирующие фитнес-браслеты помогут найти в себе силы не
             пропускать занятия и соблюдать диету.
           </p>
-          <a href="#" class="slider-link">Подробнее</a>
+          <a href="#" class="button slider-link">Подробнее</a>
           <table class="slider-details">
             <tr class="slider-details-bold">
               <td>48 часов</td>
@@ -123,7 +123,7 @@
         </div>
         <div class="slider-details-wrapper">
           <p>
-            <b class="slider-header">Делай селфи,<br />
+            <b class="main-title slider-header">Делай селфи,<br />
               как Бен Стиллер!
             </b>
           </p>
@@ -131,7 +131,7 @@
             Самая длинная палка для селфи доступна в нашем магазине. Восемь
             (Восемь, Карл!) метров длиной и весом всего 5 кг.
           </p>
-          <a href="#" class="slider-link">Подробнее</a>
+          <a href="#" class="button slider-link">Подробнее</a>
           <table class="slider-details">
             <tr class="slider-details-bold">
               <td>8,5 м</td>
@@ -169,22 +169,32 @@
       <ul class="categories-list">
         <li class="categories-item">
           <a class="categories-link" href="#">
-            <h3 class="categories-link-text">Виртуальная реальность</h3>
+            <h3>Виртуальная реальность</h3>
           </a>
+        </li>
+        <li class="categories-item">
           <a class="categories-link" href="#">
-            <h3 class="categories-link-text">Моноподы для селфи</h3>
+            <h3>Моноподы для селфи</h3>
           </a>
+        </li>
+        <li class="categories-item">
           <a class="categories-link" href="#">
-            <h3 class="categories-link-text">Экшн-камеры</h3>
+            <h3>Экшн-камеры</h3>
           </a>
+        </li>
+        <li class="categories-item">
           <a class="categories-link" href="#">
-            <h3 class="categories-link-text">Фитнес-браслеты</h3>
+            <h3>Фитнес-браслеты</h3>
           </a>
+        </li>
+        <li class="categories-item">
           <a class="categories-link" href="#">
-            <h3 class="categories-link-text">Умные часы</h3>
+            <h3>Умные часы</h3>
           </a>
+        </li>
+        <li class="categories-item">
           <a class="categories-link" href="#">
-            <h3 class="categories-link-text">Квадрокоптеры</h3>
+            <h3>Квадрокоптеры</h3>
           </a>
         </li>
       </ul>
@@ -193,55 +203,55 @@
       <h2 class="visually-hidden">Условия оплаты и гарантии</h2>
       <ol class="proposals-pagination">
         <li class="proposals-pagination-item">
-          <button class="proposals-pagination-button proposals-pagination-button-current" type="button">
+          <button class="button proposals-pagination-button proposals-pagination-button-current" type="button">
             Доставка
           </button>
         </li>
         <li class="proposals-pagination-item">
-          <button class="proposals-pagination-button" type="button">
+          <button class="button proposals-pagination-button" type="button">
             Гарантия
           </button>
         </li>
         <li class="proposals-pagination-item">
-          <button class="proposals-pagination-button" type="button">
+          <button class="button proposals-pagination-button" type="button">
             Кредит
           </button>
         </li>
       </ol>
       <section class="proposals-item">
-        <h3 class="proposals-title">Доставка</h3>
-        <p class="proposals-text">
+        <h3 class=" main-title proposals-title">Доставка</h3>
+        <p class="plain-text proposals-text">
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду
           совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
           ваш этаж.
         </p>
       </section>
       <section class="proposals-item">
-        <h3 class="proposals-title">Гарантия</h3>
-        <p class="proposals-text">
+        <h3 class="main-title proposals-title">Гарантия</h3>
+        <p class=" plain-text proposals-text">
           Если из-за возгорания купленного у нас товара у вас сгорит дом — не
           переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
         </p>
       </section>
       <section class="proposals-item">
-        <h3 class="proposals-title">Кредит</h3>
-        <p class="proposals-text">
+        <h3 class="main-title proposals-title">Кредит</h3>
+        <p class="plain-text proposals-text">
           Залезть в долговую яму стало проще! Кредитные консультанты подберут
           для вас наиболее выгодные условия кредита. Выгодные для банка,
           разумеется.
         </p>
       </section>
       <a class="proposals-info" href="#">
-        <b class="proposals-info-text">Доставим редкий товар под заказ</b>
+        <b>Доставим редкий товар под заказ</b>
       </a>
     </section>
     <section class="about">
-      <h2 class="about-title">О нас</h2>
-      <p>
+      <h2 class="main-title about-title">О нас</h2>
+      <p class="plain-text">
         Огромный выбор гаджетов не оставит равнодушным гика, который есть в
         каждом из нас.
       </p>
-      <p>
+      <p class="plain-text">
         Мы можем доставить ваш товар в самые отдалённые уголки России
         транспортными компаниями:
       </p>
@@ -256,31 +266,31 @@
           <span>ТоксБерри</span>
         </li>
       </ul>
-      <a href="#" class="about-link">Подробнее о нас</a>
+      <a href="#" class="button about-link">Подробнее о нас</a>
     </section>
     <section class="contacts">
-      <h2 class="contacts-title">Контакты</h2>
-      <p class="contacts-text">
+      <h2 class="main-title contacts-title">Контакты</h2>
+      <p class="plain-text contacts-text">
         Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
         проверить работоспособность покупки.
       </p>
       <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
       <address class="contacts-address">
-        <p class="contacts-address-text">
+        <p class="plain-text contacts-address-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </p>
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="plain-text contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <h3 class="contacts-subtitle">Время работы</h3>
       <ul class="contacts-schedule">
-        <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-        <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+        <li class="plain-text contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+        <li class="plain-text contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
       </ul>
-      <a class="contacts-link" href="#">Напишите нам</a>
+      <a class="button contacts-link" href="#">Напишите нам</a>
     </section>
     <section class="email">
-      <h2 class="email-title">Подпишитесь на рассылку</h2>
-      <p class="email-text">
+      <h2 class="main-title email-title">Подпишитесь на рассылку</h2>
+      <p class="plain-text email-text">
         Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
         распаковками, а также акции, спецпредложения и вот это вот всё.
       </p>
@@ -288,9 +298,9 @@
         <label class="visually-hidden">Email
           <input type="email" placeholder="Ваш e-mail" name="email-form-field" required />
         </label>
-        <button class="email-form-button" type="submit">Подписаться</button>
+        <button class="button email-form-button" type="submit">Подписаться</button>
       </form>
-      <span class="email-disclaimer">Это бесплатно</span>
+      <span class="plain-text email-disclaimer">Это бесплатно</span>
     </section>
   </main>
   <footer class="main-footer">
@@ -309,7 +319,7 @@
 
     <section class="navigation">
       <h2 class="visually-hidden">Навигация по сайту</h2>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-page">
         <li class="navigation-item">
           <a href="delivery.html" class="navigation-link">Доставка</a>
         </li>
