@@ -38,7 +38,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    letter-spacing: 00.2em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
@@ -191,4 +191,16 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+}
+
+.pagination-next,
+.pagination-prev {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    color: black;
+    opacity: 1;
+    text-transform: uppercase;
 }
