@@ -152,6 +152,7 @@ body {
 
 .catalog-products {
     background: #F0F0F0;
+    display: flex;
 }
 
 .product-card-link {
@@ -335,4 +336,12 @@ body {
 .footer-inner-right {
     max-width: 175px;
     margin-left: auto;
+}
+
+.catalog-filter-container {
+    width: 320px;
+}
+
+.catalog-product-container {
+    width: 840px;
 }
