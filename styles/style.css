@@ -152,7 +152,12 @@ body {
 
 .catalog-products {
     background: #F0F0F0;
+}
+
+.catalog-products-wrapper {
     display: flex;
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .product-card-link {
@@ -222,8 +227,8 @@ body {
 
 .main-container {
     flex-grow: 1;
-    width: 1160px;
-    margin: 0 auto;
+    /* width: 1160px;
+    margin: 0 auto; */
 }
 
 .main-header .navigation {
@@ -276,7 +281,10 @@ body {
     margin-right: 40px;
 }
 
-
+.categories {
+    width: 1160px;
+    margin: 0 auto;
+}
 
 .categories-list {
     margin: 0;
@@ -294,6 +302,8 @@ body {
 }
 
 .about-contacts-wrapper {
+    width: 1160px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -306,6 +316,8 @@ body {
 }
 
 .email-wrapper {
+    width: 1160px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 
@@ -344,4 +356,16 @@ body {
 
 .catalog-product-container {
     width: 840px;
+}
+
+.proposals {
+    background-color: #F0F0F0;
+}
+
+.email {
+    background-color: #F0F0F0;
+}
+.wrapper {
+    width: 1160px;
+    margin: 0 auto;
 }
