@@ -72,7 +72,9 @@ body {
     margin-left: auto;
     display: flex;
     min-width: 471px;
+    max-width: 540px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -325,6 +327,7 @@ body {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .proposals-wrapper {
