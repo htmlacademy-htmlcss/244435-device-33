@@ -64,7 +64,10 @@ body {
     font-weight: 800;
     line-height: 21px;
     letter-spacing: 0.2em;
+
+    display: block;
 }
+
 
 .main-title {
     font-family: "Raleway", sans-serif;
@@ -140,6 +143,11 @@ body {
     font-size: 16px;
     line-height: 19px;
 }
+
+.breadcrumbs-item {
+    margin-right: 36px;
+}
+
 
 .catalog-products-label {
     font-family: Raleway;
@@ -223,6 +231,9 @@ body {
     color: black;
     opacity: 1;
     text-transform: uppercase;
+
+    display: block;
+    padding: 25px;
 }
 
 .main-container {
@@ -239,37 +250,51 @@ body {
 .navigation-list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 .user-navigation-wrapper {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
-.navigation-page {
-    display: flex;
+
+
+.navigation-user {
+    min-width: 230px;
+    justify-content: space-between;
 }
 
 .main-search {
     width: 517px;
+    margin-right: 26px;
+
 }
 
 .navigation-cart {
     width: 240px;
-}
+    margin-left: auto;
+    justify-content: space-between;
 
-.navigation-page li:first-child {
-    width: 293px;
-    margin-right: auto;
 }
 
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .slider {
     width: 1160px;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 
 .slider-item {
@@ -284,6 +309,7 @@ body {
 .categories {
     width: 1160px;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 
 .categories-list {
@@ -291,14 +317,18 @@ body {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .proposals-wrapper {
     display: flex;
+    margin-bottom: 70px;
 }
 
 .proposals-info-wrapper {
     text-align: center;
+    margin-bottom: 70px;
 }
 
 .about-contacts-wrapper {
@@ -306,6 +336,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 .about-contacts-wrapper .about {
@@ -337,10 +368,12 @@ body {
     display: flex;
     width: 1160px;
     margin: 0 auto;
+    padding-top: 62px;
 }
 
 
 .footer-container .contacts {
+
     width: 240px;
     margin-right: 111px;
 }
@@ -348,6 +381,7 @@ body {
 .footer-inner-right {
     max-width: 175px;
     margin-left: auto;
+    margin-top: 78px;
 }
 
 .catalog-filter-container {
@@ -368,4 +402,89 @@ body {
 .wrapper {
     width: 1160px;
     margin: 0 auto;
+}
+
+
+.footer-inner-middle {
+    width: 444px;
+    margin-top: 75px;
+}
+
+.footer-inner-middle .navigation-list {
+    justify-content: space-between;
+    margin-bottom: 62px;
+
+}
+
+
+.social-list {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 61px;
+}
+
+/* .social-item {
+    display: block;
+    background-color: red;
+    min-width: 40px;
+    min-height: 40px;
+} */
+
+
+.inner-header-title {
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 16px;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+
+.pagination {
+    list-style-type: none;
+    display: flex;
+}
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EBEBEB;
+}
+
+.pagination .pagination-link {
+    display: block;
+    box-sizing: border-box;
+    min-width: 40px;
+    min-height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+header .navigation-page li:nth-child(2) {
+    margin-left: auto;
+}
+
+header .navigation-page li:not(:last-child) {
+    margin-right: 45px;
+}
+
+.social-button {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
 }
