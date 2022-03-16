@@ -68,16 +68,6 @@ body {
     display: block;
 }
 
-.navigation-page-right {
-    margin-left: auto;
-    display: flex;
-    min-width: 471px;
-    max-width: 540px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
 
 .main-title {
     font-family: "Raleway", sans-serif;
@@ -152,10 +142,11 @@ body {
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
-    display: block;
-    padding-right: 36px;
 }
 
+.breadcrumbs-item {
+    margin-right: 36px;
+}
 
 
 .catalog-products-label {
@@ -377,11 +368,12 @@ body {
     display: flex;
     width: 1160px;
     margin: 0 auto;
+    padding-top: 62px;
 }
 
 
 .footer-container .contacts {
-    padding-top: 62px;
+
     width: 240px;
     margin-right: 111px;
 }
@@ -389,7 +381,7 @@ body {
 .footer-inner-right {
     max-width: 175px;
     margin-left: auto;
-    padding-top: 140px;
+    margin-top: 78px;
 }
 
 .catalog-filter-container {
@@ -415,7 +407,7 @@ body {
 
 .footer-inner-middle {
     width: 444px;
-    padding-top: 137px;
+    margin-top: 75px;
 }
 
 .footer-inner-middle .navigation-list {
@@ -436,13 +428,13 @@ body {
     margin-bottom: 61px;
 }
 
-.social-item {
+/* .social-item {
     display: block;
-    /*пока сделала red, чтобы про них не забыть*/
     background-color: red;
     min-width: 40px;
     min-height: 40px;
-}
+} */
+
 
 .inner-header-title {
     margin: 0;
@@ -459,23 +451,40 @@ body {
     margin-bottom: 35px;
 }
 
+
 .pagination {
-    display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.pagination-numbers {
     display: flex;
 }
 
-.pagination-numbers .pagination-link {
-    text-align: center;
+.pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EBEBEB;
+}
+
+.pagination .pagination-link {
     display: block;
+    box-sizing: border-box;
     min-width: 40px;
     min-height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+
+header .navigation-page li:nth-child(2) {
+    margin-left: auto;
+}
+
+header .navigation-page li:not(:last-child) {
+    margin-right: 45px;
+}
+
+.social-button {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+}
