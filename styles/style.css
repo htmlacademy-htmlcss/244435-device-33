@@ -530,5 +530,7 @@ header .navigation-page li:not(:last-child) {
 
 .product-card-image {
     margin-bottom: 32px;
+
+    object-fit: contain;
 }
 
