@@ -261,7 +261,10 @@ body {
 .main-header .navigation {
     width: 1040px;
     margin: 0 auto;
+    padding-bottom: 152px;
 }
+
+
 
 .navigation-list {
     margin: 0;
