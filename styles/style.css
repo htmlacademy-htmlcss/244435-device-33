@@ -92,6 +92,8 @@ body {
 .categories-link {
     text-decoration: none;
     color: #000000;
+    width: 160px;
+    display: block;
 }
 
 .categories-link h3 {
@@ -100,6 +102,17 @@ body {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.categories-link::before {
+    display: block;
+    height: 160px;
+    content: '';
+    background-color: #FFE17F;
+    background-repeat: no-repeat;
+    background-size: 160px 160px;
+    margin-bottom: 32px;
 }
 
 .proposals-info {
@@ -331,7 +344,6 @@ body {
 
 .proposals-info-wrapper {
     text-align: center;
-    margin-bottom: 70px;
 }
 
 .about-contacts-wrapper {
@@ -431,12 +443,6 @@ body {
     margin-bottom: 61px;
 }
 
-/* .social-item {
-    display: block;
-    background-color: red;
-    min-width: 40px;
-    min-height: 40px;
-} */
 
 
 .inner-header-title {
@@ -485,12 +491,6 @@ header .navigation-page li:not(:last-child) {
     margin-right: 45px;
 }
 
-.social-button {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border: 1px solid red;
-}
 
 
 .product-list-container {
@@ -534,3 +534,114 @@ header .navigation-page li:not(:last-child) {
     object-fit: contain;
 }
 
+.navigation-logo {
+     position: relative;
+     top: -22px;
+}
+
+body {
+    padding-top: 40px;
+}
+
+.nav-user-icon {
+    padding-left: 27px;
+    background-image: url('/images/user-icon.svg');
+    background-size: 15px 12px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.nav-compare-icon {
+    padding-left: 22px;
+    background-image: url("/images/compare-icon.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 10px 12px;
+}
+
+.nav-cart-icon {
+    position: relative;
+    padding-left: 43px;
+    background-image: url("/images/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 18px center;
+    background-size: 13px 21px;
+}
+
+.nav-cart-icon::before {
+    background-color: #FFFFFF;
+    content: '2';
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+
+a.social-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.3;
+}
+
+.categories-link.category-vr::before {
+    background-image: url('/images/category-vr.svg');
+}
+
+.categories-link.category-selfie::before {
+    background-image: url('/images/category-selfie.svg');
+}
+
+.categories-link.category-camera::before {
+    background-image: url('/images/category-camera.svg');
+}
+
+.categories-link.category-fitness::before {
+    background-image: url('/images/category-fitness.svg');
+}
+
+.categories-link.category-watch::before {
+    background-image: url('/images/category-watch.svg');
+}
+
+.categories-link.category-quadrocopter::before {
+    background-image: url('/images/category-quadrocopter.svg');
+}
+
+.button-fb {
+    background-image: url("/images/fb-icon.svg");
+}
+
+.button-ig {
+    background-image: url("/images/ig-icon.svg");
+}
+
+.button-tw {
+    background-image: url("/images/tw-icon.svg");
+}
+
+
+section.about > *:not(:last-child),
+section.contacts > *:not(:last-child) {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+
+
+section.about .main-title,
+section.contacts .main-title {
+    margin: 0;
+    margin-bottom: 48px;
+}
