@@ -548,7 +548,7 @@ body {
 
 .nav-user-icon {
     padding-left: 27px;
-    background-image: url('/images/user-icon.svg');
+    background-image: url('../images/user-icon.svg');
     background-size: 15px 12px;
     background-position: left center;
     background-repeat: no-repeat;
@@ -556,7 +556,7 @@ body {
 
 .nav-compare-icon {
     padding-left: 22px;
-    background-image: url("/images/compare-icon.svg");
+    background-image: url("../images/compare-icon.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 10px 12px;
@@ -565,7 +565,7 @@ body {
 .nav-cart-icon {
     position: relative;
     padding-left: 43px;
-    background-image: url("/images/cart-icon.svg");
+    background-image: url("../images/cart-icon.svg");
     background-repeat: no-repeat;
     background-position: 18px center;
     background-size: 13px 21px;
@@ -599,39 +599,39 @@ a.social-button {
 }
 
 .categories-link.category-vr::before {
-    background-image: url('/images/category-vr.svg');
+    background-image: url('../images/category-vr.svg');
 }
 
 .categories-link.category-selfie::before {
-    background-image: url('/images/category-selfie.svg');
+    background-image: url('../images/category-selfie.svg');
 }
 
 .categories-link.category-camera::before {
-    background-image: url('/images/category-camera.svg');
+    background-image: url('../images/category-camera.svg');
 }
 
 .categories-link.category-fitness::before {
-    background-image: url('/images/category-fitness.svg');
+    background-image: url('../images/category-fitness.svg');
 }
 
 .categories-link.category-watch::before {
-    background-image: url('/images/category-watch.svg');
+    background-image: url('../images/category-watch.svg');
 }
 
 .categories-link.category-quadrocopter::before {
-    background-image: url('/images/category-quadrocopter.svg');
+    background-image: url('../images/category-quadrocopter.svg');
 }
 
 .button-fb {
-    background-image: url("/images/fb-icon.svg");
+    background-image: url("../images/fb-icon.svg");
 }
 
 .button-ig {
-    background-image: url("/images/ig-icon.svg");
+    background-image: url("../images/ig-icon.svg");
 }
 
 .button-tw {
-    background-image: url("/images/tw-icon.svg");
+    background-image: url("../images/tw-icon.svg");
 }
 
 
