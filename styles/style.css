@@ -115,7 +115,7 @@ body {
     margin-bottom: 32px;
 }
 
-.proposals-info {
+.proposals-info-text {
     font-family: Raleway;
     font-weight: 800;
     font-size: 20px;
@@ -144,6 +144,11 @@ body {
     font-size: 16px;
 }
 
+.contacts-phone {
+    margin-bottom: 63px;
+    display: block;
+}
+
 .main-footer,
 .main-footer a {
     color: #FFFFFF;
@@ -154,13 +159,24 @@ body {
     color: #000000;
     text-decoration: none;
     font-size: 16px;
-    line-height: 19px;
-}
-
-.breadcrumbs-item {
     margin-right: 36px;
 }
 
+.breadcrumbs-item {
+    position: relative;
+    line-height: 19px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    content: '';
+    background-image: url("../images/light-gray-arrow-icon.svg");
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 7px;
+    position: absolute;
+    top: 6px;
+    right: 16px;
+}
 
 .catalog-products-label {
     font-family: Raleway;
@@ -346,7 +362,31 @@ body {
 }
 
 .proposals-info-wrapper {
+    height: 100px;
+    box-sizing: border-box;
     text-align: center;
+    background-color: #F0F0F0;
+    width: 1160px;
+    margin: 0 auto; 
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 70px;
+
+    position: relative;
+}
+
+.proposals-info-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 125px;
+    height: 100px;
+    background-color: #FFE17F;
+    background-image: url('../images/delivery-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .about-contacts-wrapper {
@@ -359,9 +399,13 @@ body {
 
 .about-contacts-wrapper .about {
     width: 520px;
+    position: relative;
+    padding-top: 47px;
 }
 .about-contacts-wrapper .contacts {
     width: 532px;
+    position: relative;
+    padding-top: 47px;
 }
 
 .email-wrapper {
@@ -391,9 +435,20 @@ body {
 
 
 .footer-container .contacts {
-
     width: 240px;
+    height: 182px;
     margin-right: 111px;
+    position: relative;
+}
+
+.footer-container .contacts::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 84px;
+    height: 7px;
+    background-color: #FFC500;
 }
 
 .footer-inner-right {
@@ -412,6 +467,7 @@ body {
 
 .proposals {
     background-color: #F0F0F0;
+    margin-bottom: 70px;
 }
 
 .email {
@@ -635,16 +691,47 @@ a.social-button {
 }
 
 
-section.about > *:not(:last-child),
-section.contacts > *:not(:last-child) {
+.about-contacts-wrapper .about > *:not(:last-child),
+.about-contacts-wrapper .contacts > *:not(:last-child) {
     margin: 0;
     margin-bottom: 30px;
 }
 
 
 
-section.about .main-title,
-section.contacts .main-title {
+.about-contacts-wrapper .about .main-title,
+.about-contacts-wrapper .contacts .main-title {
     margin: 0;
     margin-bottom: 48px;
+}
+
+.slider-details-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.slider-details-wrapper::before {
+    content: '01';
+    font-size: 180px;
+    font-weight: 700;
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.about-contacts-wrapper .contacts::before,
+.about-contacts-wrapper .about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84px;
+    height: 7px;
+    background-color: #000000;
+}
+
+.main-header .nav-catalog {
+    padding-bottom: 38px;
 }
