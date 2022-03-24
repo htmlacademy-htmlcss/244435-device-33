@@ -9,8 +9,8 @@
 <body>
   <header class="main-header">
     <nav class="navigation">
-      <a href="index.html" class="navigation-logo">
-        <img src="images/logo_black.svg" alt="Логотип магазина Девайс." class="main-header-logo" width="145" height="36"/>
+      <a href="index.html" class="main-header-logo">
+        <img src="images/logo_black.svg" alt="Логотип магазина Девайс." width="145" height="36"/>
       </a>
       <div class="user-navigation-wrapper">
         <form action="https://echo.htmlacademy.ru/" class="main-search" method="post">
@@ -20,15 +20,15 @@
         </form>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Войти</a>
+            <a href="#" class="navigation-link nav-user-icon">Войти</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-cart">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Сравнить</a>
+            <a href="#" class="navigation-link nav-compare-icon">Сравнить</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Корзина</a>
+            <a href="#" class="navigation-link nav-cart-icon">Корзина</a>
           </li>
         </ul>
       </div>
@@ -54,12 +54,14 @@
       <div class="slider-item">
         <div class="slider-image-wrapper">
           <img class="slider-image" src="images/slider-1.png" alt="Белый квадрокоптер." width="560" height="560" />
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий баннер.</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующий баннер.</span>
-          </button>
+          <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий баннер.</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий баннер.</span>
+            </button>
+          </div>
         </div>
         <div class="slider-details-wrapper">
           <p>
@@ -86,12 +88,14 @@
       <div class="slider-item">
         <div class="slider-image-wrapper">
           <img class="slider-image" src="images/slider-2.png" alt="Черный фитнес-браслет." width="560" height="560" />
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий баннер.</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующий баннер.</span>
-          </button>
+          <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий баннер.</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий баннер.</span>
+            </button>
+          </div>
         </div>
         <div class="slider-details-wrapper">
           <p>
@@ -116,12 +120,14 @@
       <div class="slider-item">
         <div class="slider-image-wrapper">
           <img class="slider-image" src="images/slider-3.png" alt="Черная палка для селфи." width="560" height="560" />
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий баннер.</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующий баннер.</span>
-          </button>
+          <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий баннер.</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий баннер.</span>
+            </button>
+          </div>
         </div>
         <div class="slider-details-wrapper">
           <p>
@@ -149,17 +155,17 @@
         </div>
       </div>
       <ol class="slider-pagination">
-        <li class="sider-pagination-item">
+        <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
             <span class="visually-hidden">1 баннер.</span>
           </button>
         </li>
-        <li>
+        <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
             <span class="visually-hidden">2 баннер.</span>
           </button>
         </li>
-        <li>
+        <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
             <span class="visually-hidden">3 баннер.</span>
           </button>
@@ -170,33 +176,33 @@
       <div class="categories-wrapper">
         <h2 class="visually-hidden">Категории товаров.</h2>
         <ul class="categories-list">
-          <li class="categories-item">
-            <a class="categories-link" href="#">
+          <li>
+            <a class="categories-link category-vr" href="#">
               <h3>Виртуальная реальность</h3>
             </a>
           </li>
-          <li class="categories-item">
-            <a class="categories-link" href="#">
+          <li>
+            <a class="categories-link category-selfie" href="#">
               <h3>Моноподы для селфи</h3>
             </a>
           </li>
-          <li class="categories-item">
-            <a class="categories-link" href="#">
+          <li>
+            <a class="categories-link category-camera" href="#">
               <h3>Экшн-камеры</h3>
             </a>
           </li>
-          <li class="categories-item">
-            <a class="categories-link" href="#">
+          <li>
+            <a class="categories-link category-fitness" href="#">
               <h3>Фитнес-браслеты</h3>
             </a>
           </li>
-          <li class="categories-item">
-            <a class="categories-link" href="#">
+          <li>
+            <a class="categories-link category-watch" href="#">
               <h3>Умные часы</h3>
             </a>
           </li>
-          <li class="categories-item">
-            <a class="categories-link" href="#">
+          <li>
+            <a class="categories-link category-quadrocopter" href="#">
               <h3>Квадрокоптеры</h3>
             </a>
           </li>
@@ -251,13 +257,11 @@
   
           </div>
         </div>
-        <div class="proposals-info-wrapper">
-          <a class="proposals-info" href="#">
-            <b>Доставим редкий товар под заказ</b>
-          </a>
-        </div>
       </div>
     </section>
+      <a class="proposals-info-text proposals-info-wrapper" href="#">
+        <b>Доставим редкий товар под заказ</b>
+      </a>
     <div class="about-contacts-wrapper">
       <section class="about">
         <h2 class="main-title about-title">О нас</h2>
@@ -288,18 +292,22 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
           проверить работоспособность покупки.
         </p>
-        <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
-        <address class="contacts-address">
-          <p class="plain-text contacts-address-text">
-            Санкт-Петербург, набережная реки Карповки, 5, литера П.
-          </p>
-          <a class="plain-text contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-        <h3 class="contacts-subtitle">Время работы</h3>
-        <ul class="contacts-schedule">
-          <li class="plain-text contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="plain-text contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-        </ul>
+        <section>
+          <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+          <address class="contacts-address">
+            <p class="plain-text contacts-address-text">
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            </p>
+            <a class="plain-text contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+        </section>
+        <section>
+          <h3 class="contacts-subtitle">Время работы</h3>
+          <ul class="contacts-schedule">
+            <li class="plain-text contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="plain-text contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+          </ul>
+        </section>
         <a class="button contacts-link" href="#">Напишите нам</a>
       </section>
     </div>
@@ -325,8 +333,8 @@
   <footer class="main-footer">
     <div class="footer-container">
       <section class="contacts">
-        <a href="index.html">
-          <img src="images/logo_yellow.svg" alt="Логотип магазина Девайс." class="main-footer-logo" width="145" height="36" />
+        <a href="index.html"  class="main-footer-logo">
+          <img src="images/logo_yellow.svg" alt="Логотип магазина Девайс." width="145" height="36" />
         </a>
         <h2 class="visually-hidden">Контакты.</h2>
         <address class="contacts-address">
@@ -353,16 +361,16 @@
         <section class="social">
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social-list">
-            <li class="social-item">
-              <a href="https://www.facebook.com/htmlacademy" class="social-button">
+            <li>
+              <a href="https://www.facebook.com/htmlacademy" class="social-button button-fb">
                 <span class="visually-hidden">Фейсбук.</span></a>
             </li>
-            <li class="social-item">
-              <a href="https://www.instagram.com/htmlacademy/" class="social-button">
+            <li>
+              <a href="https://www.instagram.com/htmlacademy/" class="social-button button-ig">
                 <span class="visually-hidden">Инстаграм.</span></a>
             </li>
-            <li class="social-item">
-              <a href="https://twitter.com/htmlacademy_ru" class="social-button">
+            <li>
+              <a href="https://twitter.com/htmlacademy_ru" class="social-button button-tw">
                 <span class="visually-hidden">Твиттер.</span></a>
             </li>
           </ul>
