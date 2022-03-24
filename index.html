@@ -9,8 +9,8 @@
 <body>
   <header class="main-header">
     <nav class="navigation">
-      <a href="index.html" class="navigation-logo">
-        <img src="images/logo_black.svg" alt="Логотип магазина Девайс." class="main-header-logo" width="145" height="36"/>
+      <a href="index.html" class="main-header-logo">
+        <img src="images/logo_black.svg" alt="Логотип магазина Девайс." width="145" height="36"/>
       </a>
       <div class="user-navigation-wrapper">
         <form action="https://echo.htmlacademy.ru/" class="main-search" method="post">
@@ -54,12 +54,14 @@
       <div class="slider-item">
         <div class="slider-image-wrapper">
           <img class="slider-image" src="images/slider-1.png" alt="Белый квадрокоптер." width="560" height="560" />
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий баннер.</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующий баннер.</span>
-          </button>
+          <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий баннер.</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий баннер.</span>
+            </button>
+          </div>
         </div>
         <div class="slider-details-wrapper">
           <p>
@@ -86,12 +88,14 @@
       <div class="slider-item">
         <div class="slider-image-wrapper">
           <img class="slider-image" src="images/slider-2.png" alt="Черный фитнес-браслет." width="560" height="560" />
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий баннер.</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующий баннер.</span>
-          </button>
+          <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий баннер.</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий баннер.</span>
+            </button>
+          </div>
         </div>
         <div class="slider-details-wrapper">
           <p>
@@ -116,12 +120,14 @@
       <div class="slider-item">
         <div class="slider-image-wrapper">
           <img class="slider-image" src="images/slider-3.png" alt="Черная палка для селфи." width="560" height="560" />
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий баннер.</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующий баннер.</span>
-          </button>
+          <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий баннер.</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий баннер.</span>
+            </button>
+          </div>
         </div>
         <div class="slider-details-wrapper">
           <p>
@@ -149,17 +155,17 @@
         </div>
       </div>
       <ol class="slider-pagination">
-        <li class="sider-pagination-item">
+        <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
             <span class="visually-hidden">1 баннер.</span>
           </button>
         </li>
-        <li>
+        <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
             <span class="visually-hidden">2 баннер.</span>
           </button>
         </li>
-        <li>
+        <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
             <span class="visually-hidden">3 баннер.</span>
           </button>
@@ -253,11 +259,9 @@
         </div>
       </div>
     </section>
-    <div class="proposals-info-wrapper">
-      <a class="proposals-info-text" href="#">
+      <a class="proposals-info-text proposals-info-wrapper" href="#">
         <b>Доставим редкий товар под заказ</b>
       </a>
-    </div>
     <div class="about-contacts-wrapper">
       <section class="about">
         <h2 class="main-title about-title">О нас</h2>
@@ -329,8 +333,8 @@
   <footer class="main-footer">
     <div class="footer-container">
       <section class="contacts">
-        <a href="index.html">
-          <img src="images/logo_yellow.svg" alt="Логотип магазина Девайс." class="main-footer-logo" width="145" height="36" />
+        <a href="index.html"  class="main-footer-logo">
+          <img src="images/logo_yellow.svg" alt="Логотип магазина Девайс." width="145" height="36" />
         </a>
         <h2 class="visually-hidden">Контакты.</h2>
         <address class="contacts-address">
